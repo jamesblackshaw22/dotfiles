@@ -43,9 +43,11 @@ return require('packer').startup(function(use)
   use('saadparwaiz1/cmp_luasnip') --Completion engine for luasnip
   use('rafamadriz/friendly-snippets') --Preconfigured snippets
 
-  --Telescope image previews
-  use('nvim-lua/popup.nvim')
-  use('nvim-telescope/telescope-media-files.nvim')
+  --Indent indicators
+  use('lukas-reineke/indent-blankline.nvim')
+
+  --ToggleTerm
+  use('akinsho/toggleterm.nvim') 
 end)
 
 
