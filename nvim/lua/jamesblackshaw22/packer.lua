@@ -47,7 +47,11 @@ return require('packer').startup(function(use)
   use('lukas-reineke/indent-blankline.nvim')
 
   --ToggleTerm
-  use('akinsho/toggleterm.nvim') 
+  use('akinsho/toggleterm.nvim')
+
+  --Autosave
+  use('Pocco81/auto-save.nvim')
+ 
 end)
 
 
