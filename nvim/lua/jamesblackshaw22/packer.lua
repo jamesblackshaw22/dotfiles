@@ -24,8 +24,8 @@ return require('packer').startup(function(use)
   }
 
   --Colour Scheme
-  use {'morhetz/gruvbox', config = function() vim.cmd.colorscheme("gruvbox") end }
-  
+  use { "ellisonleao/gruvbox.nvim" }
+
   --Treesitter
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
