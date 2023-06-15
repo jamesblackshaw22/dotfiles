@@ -34,6 +34,9 @@ return require('packer').startup(function(use)
   use('williamboman/mason-lspconfig.nvim') -- Bridges gap between mason.nvim and lspconfig
   use('neovim/nvim-lspconfig') --Allows setup of lsp configurations to communicate between neovim and lsp's
 
+  --Null Ls 
+  use('jose-elias-alvarez/null-ls.nvim')
+
   --Auto-Complete
   use('hrsh7th/nvim-cmp') --Autocompletion engine
   use('hrsh7th/cmp-nvim-lsp') --Provides lsp snippets to cmp
@@ -51,6 +54,12 @@ return require('packer').startup(function(use)
 
   --Autosave
   use('Pocco81/auto-save.nvim')
+
+  --AutoPairs
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
  
 end)
 
